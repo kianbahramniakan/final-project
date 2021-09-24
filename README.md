@@ -14,7 +14,7 @@ categorey5 (games): you can see and download 51 high rresulotion images in this 
 
 I tried to make the site attractive and it's get many time for me I hope you enjoy it. :))
 
-about.html & contant.html: in this to website i tride ti intriduse myself.
+about.html & contant.html: in this  website i tride to intriduse myself.
 
 index.html: this website is the firt thing that you can see
 it has nav bar anf one slide show that you can see 6 popular images with low quality.
