@@ -1,7 +1,5 @@
 # WALL.P
 
-#### Video Demo: <https://youtu.be/I1b8232M2h4>
-
 #### Description:
 this project is about the wallpapers website.
 this website has one slide show in index.html
