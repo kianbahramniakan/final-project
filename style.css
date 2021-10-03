@@ -6,6 +6,28 @@
     box-sizing: border-box;
 
 }
+.search {
+  padding: 10px 4px;
+  position: absolute;
+  left: 0%;
+  margin-left:30px;
+  height: 40px;
+  float:left;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  margin-top:44px;
+}
+.search-button{
+  margin-left:30px;
+  position: absolute;
+  left: 170px;
+  padding: 10px 13px;
+  height: 40px;
+  left:12%;
+  background-color: #ffffff;
+  border-radius: 0.5rem;
+  margin-top:44px;
+}
 html {
   background: url(index/1212.jpg) no-repeat center center fixed;
   -webkit-background-size: cover;
@@ -129,7 +151,7 @@ a:visited {
 
 
   box-shadow: 0 15px 30px 0 rgba(0,0,0,0.11),
-    0 5px 15px 0 rgba(0,0,0,0.08);
+  0 5px 15px 0 rgba(0,0,0,0.08);
   background-color: #ffffff;
   border-radius: 0.5rem;
 
@@ -156,7 +178,7 @@ a{
     text-decoration: none;
     text-transform: uppercase;
     transition: 0.5s;
-    letter-spacing: 4px;
+    letter-spacing: 2px;
     overflow: hidden;
     margin-right: 20px;
 
@@ -355,4 +377,28 @@ a span:nth-child(4){
 /*_________________________________________________________________________*/
 .margin{
   margin-top:30px;
+}
+.more-link {
+  margin: 0;
+  position: absolute;
+  top: 75%;
+  left: 50%;
+  text-transform: uppercase;
+  font-size: 13px;
+  background-color: #5151a6;
+  padding: 10px 15px;
+  border-radius: 3px;
+  color: #fff;
+  display: inline-block;
+  line-height: 1.5;
+  text-decoration: none;
+  letter-spacing: 3px;
+}
+#tv2:hover {
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
+}
+.salam:hover{
+  border-radius: 0% 0% 50% 50% / 0% 0% 5% 5% ;
+  box-shadow: 10px 10px rgba(0,0,0,.25);
 }
