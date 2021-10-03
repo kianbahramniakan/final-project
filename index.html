@@ -1,0 +1,153 @@
+
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta name="viewpoint" content="initial-scale=1, width=device-width">
+    <!--linking the icon,title and ... -->
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Balsamiq+Sans&display=swap" />
+    <link rel="shortcut icon" href="Untitled.png" />
+    <link href="style.css" rel="stylesheet">
+    <title>WALL.P</title>
+</head>
+    <script>
+     // java script
+
+
+        function myFunction4(){
+        let x =
+        document.getElementById("1").value;
+        if (x == 'nature' || x == 'natures' || x == 'Nature' || x == 'Natures' || x == 'NATURE' || x == 'NATURES')
+        {
+            window.location.href = "nature.html";
+        }
+        else if (x == 'cars' || x == 'car' || x == 'Cars' || x == 'Car' || x == 'CAR' || x == 'CARS')
+        {
+           window.location.href = "cars.html";
+        }
+        else if (x == 'fantasy' || x == 'Fantasy' || x == 'FANTASY')
+        {
+            window.location.href = "fantasy.html";
+        }
+        else{
+            window.location.href = "index2.html"
+        }}
+
+        var slideIndex = 1;
+        showSlides(slideIndex);
+
+        // Next/previous controls
+        function plusSlides(n) {
+            showSlides(slideIndex += n);
+        }
+
+        // Thumbnail image controls
+        function currentSlide(n) {
+            showSlides(slideIndex = n);
+        }
+
+        function showSlides(n) {
+            var i;
+            var slides = document.getElementsByClassName("mySlides");
+            var dots = document.getElementsByClassName("demo");
+            var captionText = document.getElementById("caption");
+            if (n > slides.length) { slideIndex = 1 }
+            if (n < 1) { slideIndex = slides.length }
+            for (i = 0; i < slides.length; i++) {
+                slides[i].style.display = "none";
+            }
+            for (i = 0; i < dots.length; i++) {
+                dots[i].className = dots[i].className.replace(" active", "");
+            }
+            slides[slideIndex - 1].style.display = "block";
+            dots[slideIndex - 1].className += " active";
+            captionText.innerHTML = dots[slideIndex - 1].alt;
+        }
+    </script>
+
+<body>
+    <!--the body style-->
+
+    <div>
+    <ul>
+        <input id="1" function="myFunction4"  class="search , salam"  placeholder="search..."><button id="myBtn"  class="salam , search-button" style="font-family: 'Balsamiq Sans', cursive;" onclick="myFunction4()" ><span></span>  Search  </button>
+        <a class="w3-bar-item w3-button , thing" id="tv2" href="wallpaper.html"><span></span>Wallpapers</a>
+        <a class="w3-bar-item w3-button , thing" id="tv2" href="contact.html"><span></span>Contact</a>
+        <a class="w3-bar-item w3-button , thing" id="tv2" href="about.html"><span></span>About</a>
+    </ul>
+    </div>
+
+
+
+
+    <!-- Container for the image gallery -->
+    <div class="container" style="margin-top:-30px;">
+        <p style="font-family:Raleway;">Slide Show</p>
+          <a href="wallpaper.html"><h3 style="font-size:16px;" class="w3-bar-item w3-button"><span></span><span></span><span></span>Click here for more</h3></a>
+        <!-- Full-width images with number text -->
+        <div class="mySlides">
+            <img src="slide-show/sakhre.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="slide-show/sakhre-sakht.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="slide-show/sakhre-barfi.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="slide-show/gol-red.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="slide-show/gol-zard.jpg" style="width:100%">
+        </div>
+
+        <div class="mySlides">
+            <img src="slide-show/derakht.jpg" style="width:100%">
+        </div>
+
+        <!-- Next and previous buttons i;ve delete them cause have bugs-->
+
+
+        <!-- Image text -->
+        <div class="caption-container">
+            <p id="caption"></p>
+        </div>
+
+        <!-- Thumbnail images -->
+        <div class="row">
+            <div class="column">
+                <img class="demo cursor , image" src="slide-show/sakhre.jpg" style="width:100%"
+                    onclick="currentSlide(1)">
+            </div>
+            <div class="column">
+                <img class="demo cursor , image" src="slide-show/sakhre-sakht.jpg" style="width:100%"
+                    onclick="currentSlide(2)">
+            </div>
+            <div class="column">
+                <img class="demo cursor , image" src="slide-show/sakhre-barfi.jpg" style="width:100%"
+                    onclick="currentSlide(3)">
+            </div>
+            <div class="column">
+                <img class="demo cursor , image" src="slide-show/gol-red.jpg" style="width:100%"
+                    onclick="currentSlide(4)">
+            </div>
+            <div class="column">
+                <img class="demo cursor , image" src="slide-show/gol-zard.jpg" style="width:100%"
+                    onclick="currentSlide(5)">
+            </div>
+            <div class="column">
+                <img class="demo cursor , image" src="slide-show/derakht.jpg" style="width:100%"
+                    onclick="currentSlide(6)">
+            </div>
+        </div>
+        <div><h3 class="left , thing , w3-bar-item w3-button" style="background-size:20px;">Press to enlarge images</h3></div>
+    </div>
+
+
+</body>
+
+
